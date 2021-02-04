@@ -77,7 +77,7 @@ if stonk.info['payoutRatio']:
 
     if (payout < 0.5):
         rating += 2
-    elif (pe < 0.7):
+    elif (payout < 0.7):
         rating += 1
 
 if stonk.info['dividendRate']:
