@@ -5,7 +5,7 @@ def music():
     path = 'C:/Users/Андрей/Music'
     music = YouTube(url.get()).streams[-1]
     music.download(path)
-    quest = Label(root, text="Загрузка '" + name + "' завершена")
+    quest = Label(root, text="Загрузка '" + YouTube(url.get()).title + "' завершена")
     quest.pack()
 
 root = Tk()
