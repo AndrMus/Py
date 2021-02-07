@@ -3,10 +3,6 @@ from tkinter import *
 
 def music():
     path = 'C:/Users/Андрей/Music'
-    print()
-    print("Name:")
-    name = YouTube(url.get()).title
-    print(name)
     music = YouTube(url.get()).streams[-1]
     music.download(path)
     quest = Label(root, text="Загрузка '" + name + "' завершена")
